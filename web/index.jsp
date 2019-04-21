@@ -22,7 +22,7 @@
 <body>
 <nav class="navbar navbar-default navbar-fixed-top">
     <div class="container">
-        <ul class="nav-pills">
+        <ul class="nav nav-pills">
             <li role="presentation" class="active"><a href="#">Home</a></li>
             <li role="presentation"><a href="#">Personal</a></li>
             <li role="presentation"><a href="#">Settings</a></li>
