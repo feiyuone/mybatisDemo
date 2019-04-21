@@ -5,15 +5,15 @@
   Time: 21:56
   To change this template use File | Settings | File Templates.
 --%>
-<!DOCTYPE html>
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
+<!DOCTYPE html>
 <html>
 <head>
     <title>登陆</title>
-    <link href="css/bootstrap.min.css">
-    <link href="css/bootstrap-theme.min.css">
-    <script src="js/jquery-3.3.1.min.js"></script>
-    <script src="js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/bootstrap-theme.min.css">
+    <script type="text/javascript" src="js/jquery-3.3.1.min.js"></script>
+    <script type="text/javascript" src="js/bootstrap.min.js"></script>
     <script type="text/javascript">
         function openRegPage() {
             location.href = "RegUser.jsp";
@@ -28,15 +28,15 @@
         <table border="0">
             <tr>
                 <td>用户名：</td>
-                <td><input type="text" name="userName"></td>
+                <td><input type="text" class="form-control" name="userName"></td>
             </tr>
             <tr>
                 <td>密码：</td>
-                <td><input type="password" name="Password"></td>
+                <td><input type="password" class="form-control" name="Password"></td>
             </tr>
             <tr>
-                <td><input type="submit" value="登录"></td>
-                <td><input type="button" value="注册" onclick="openRegPage()"></td>
+                <td><input class="btn-default" type="submit" value="登录"></td>
+                <td><input class="btn-warning" type="button" value="注册" onclick="openRegPage()"></td>
             </tr>
         </table>
     </div>
