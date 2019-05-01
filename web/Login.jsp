@@ -22,7 +22,7 @@
 </head>
 <body>
 
-<form action="LoginServlet" method="post" algin="center">
+<form action="LoginServlet" method="post">
     <div class="form-group">
         <h3>登陆界面</h3>
         <table border="0">

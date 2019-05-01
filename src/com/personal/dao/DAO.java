@@ -1,6 +1,7 @@
 package com.personal.dao;
 
 import com.personal.mybatisdemo.User;
+import com.personal.mybatisdemo.UserInfo;
 
 import java.sql.Connection;
 import java.sql.PreparedStatement;
@@ -42,5 +43,11 @@ public class DAO {
             e.printStackTrace();
         }
         return RegSucess;
+    }
+
+    public String UpdUserInfo(Connection conn, UserInfo userInfo) {
+        String rtnJsonStr = "";
+
+        return rtnJsonStr;
     }
 }

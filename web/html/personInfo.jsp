@@ -9,41 +9,44 @@
 <html>
 <head>
     <title>Personal Information</title>
-    <link rel="stylesheet" href="css/bootstrap.min.css">
-    <link rel="stylesheet" href="css/bootstrap-theme.min.css">
-    <script type="text/javascript" src="js/jquery-3.3.1.min.js"></script>
-    <script type="text/javascript" src="js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
+    <link rel="stylesheet" href="../css/bootstrap-theme.min.css">
+    <script type="text/javascript" src="../js/jquery-3.3.1.min.js"></script>
+    <script type="text/javascript" src="../js/bootstrap.min.js"></script>
 </head>
 <body>
 <div align="center">
-    <form>
-        <table>
-            <tr>
+    <h3>个人信息</h3>
+    <form action="UpdUserInfoServlet" method="post">
+        <table class="table table-striped" style="width:40%;">
+            <tr class="form-group">
                 <td>姓名：</td>
-                <td><input type="text" name="username"></td>
+                <td><input class="form-control" type="text" name="username"></td>
             </tr>
-            <tr>
+            <tr class="form-group">
                 <td>手机号：</td>
-                <td><input type="text" name="mobilephone"></td>
+                <td><input class="form-control" type="text" name="mobilephone"></td>
             </tr>
-            <tr>
+            <tr class="form-group">
                 <td>性别：</td>
                 <td>
-                    <input type="radio" name="gender" value="0">男
-                    <input type="radio" name="gender" value="1">女
+                    <label class="input-group-addon"><input type="radio" name="gender" value="0" checked>男</label>
+                    <label class="input-group-addon"><input type="radio" name="gender" value="1">女</label>
                 </td>
             </tr>
-            <tr>
+            <tr class="form-group">
                 <td>生日：</td>
-                <td><input type="date" name="birthday"></td>
+                <td><input class="form-control" type="date" name="birthday"></td>
             </tr>
-            <tr>
+            <tr class="form-group">
                 <td>职业：</td>
-                <td><input type="text" name="profession"></td>
+                <td><input class="form-control" type="text" name="profession"></td>
             </tr>
 
         </table>
     </form>
+    <button class="btn btn-default" type="submit">确定</button>
+    <button class="btn btn-warning" type="button">取消</button>
 </div>
 </body>
 </html>
