@@ -3,30 +3,39 @@ package com.personal.mybatisdemo;
 import java.util.Date;
 
 public class UserInfo {
-    private String UserName;
+    private String unid;
+    private String userName;
     private String mobilephone;
     private String gender;
     private Date birthday;
     private String profession;
 
     public UserInfo() {
-
     }
 
-    public UserInfo(String userName, String mobilephone, String gender, Date birthday, String profession) {
-        UserName = userName;
+    public UserInfo(String unid, String userName, String mobilephone, String gender, Date birthday, String profession) {
+        this.unid = unid;
+        this.userName = userName;
         this.mobilephone = mobilephone;
         this.gender = gender;
         this.birthday = birthday;
         this.profession = profession;
     }
 
+    public String getUnid() {
+        return unid;
+    }
+
+    public void setUnid(String unid) {
+        this.unid = unid;
+    }
+
     public String getUserName() {
-        return UserName;
+        return userName;
     }
 
     public void setUserName(String userName) {
-        UserName = userName;
+        this.userName = userName;
     }
 
     public String getMobilephone() {

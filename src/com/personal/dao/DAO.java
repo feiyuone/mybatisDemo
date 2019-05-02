@@ -4,6 +4,7 @@ import com.personal.mybatisdemo.User;
 import com.personal.mybatisdemo.UserInfo;
 
 import java.sql.Connection;
+import java.sql.Date;
 import java.sql.PreparedStatement;
 import java.sql.ResultSet;
 
@@ -47,6 +48,40 @@ public class DAO {
 
     public String UpdUserInfo(Connection conn, UserInfo userInfo) {
         String rtnJsonStr = "";
+        String sqlQuery = "Select * from t_userinfo where username = ?";
+        String sqlInsert = "Insert into t_userinfo(unid,username,mobilephone,gender,birthday,profession) values(?,?,?,?,?,?)";
+        String sqlUpdate = "Update t_userinfo Set unid=? ,username=? , mobilephone=? , gender=? , birthday=? , profession=?";
+        try {
+            PreparedStatement pprstate = conn.prepareStatement(sqlQuery);
+            pprstate.setString(1, userInfo.getUserName());
+            ResultSet rs = pprstate.executeQuery();
+            if (rs.next()) {
+                PreparedStatement pprstateUpd = conn.prepareStatement(sqlUpdate);
+                pprstateUpd.setString(1, userInfo.getUnid());
+                pprstateUpd.setString(2, userInfo.getUserName());
+                pprstateUpd.setString(3, userInfo.getMobilephone());
+                pprstateUpd.setString(4, userInfo.getGender());
+                pprstateUpd.setDate(5, (Date) userInfo.getBirthday());
+                pprstateUpd.setString(6, userInfo.getProfession());
+                if (pprstateUpd.executeUpdate() > 0) rtnJsonStr = "{\"tips\":\"个人信息修改成功！\"}";
+                else rtnJsonStr = "{\"tips\":\"个人信息修改失败！\"}";
+            } else {
+                PreparedStatement pprstateInsert = conn.prepareStatement(sqlInsert);
+                pprstateInsert.setString(1, userInfo.getUnid());
+                pprstateInsert.setString(2, userInfo.getUserName());
+                pprstateInsert.setString(3, userInfo.getMobilephone());
+                pprstateInsert.setString(4, userInfo.getGender());
+                pprstateInsert.setDate(5, (Date) userInfo.getBirthday());
+                pprstateInsert.setString(6, userInfo.getProfession());
+                if (pprstateInsert.executeUpdate() > 0) rtnJsonStr = "{\"tips\":\"个人信息保存成功！\"}";
+                else {
+                    System.out.println("更新数据库数据失败，请检查数据库连接！");
+                    rtnJsonStr = "{\"tips\":\"个人信息保存失败！\"}";
+                }
+            }
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
 
         return rtnJsonStr;
     }

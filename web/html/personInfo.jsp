@@ -45,8 +45,8 @@
 
         </table>
     </form>
-    <button class="btn btn-default" type="submit">确定</button>
-    <button class="btn btn-warning" type="button">取消</button>
+    <input class="btn btn-default" type="submit" value="确定">
+    <input class="btn btn-warning" type="button" value="取消">
 </div>
 </body>
 </html>

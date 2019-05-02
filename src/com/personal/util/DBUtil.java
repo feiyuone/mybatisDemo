@@ -13,6 +13,7 @@ public class DBUtil {
         try {
             Class.forName(driver);
             conn = DriverManager.getConnection(dbUrl, dbUserName, dbPassword);
+            conn.setAutoCommit(true);
         }catch (Exception e){
             e.printStackTrace();
         }
