@@ -17,7 +17,7 @@
 <body>
 <div align="center">
     <h3>个人信息</h3>
-    <form action="UpdUserInfoServlet" method="post">
+    <form action="../UpdUserInfoServlet" method="post">
         <table class="table table-striped" style="width:40%;">
             <tr class="form-group">
                 <td>姓名：</td>
@@ -44,9 +44,10 @@
             </tr>
 
         </table>
+        <input class="btn btn-default" type="submit" value="确定">
+        <input class="btn btn-warning" type="button" value="取消">
     </form>
-    <input class="btn btn-default" type="submit" value="确定">
-    <input class="btn btn-warning" type="button" value="取消">
+
 </div>
 </body>
 </html>

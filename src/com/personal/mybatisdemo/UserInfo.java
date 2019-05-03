@@ -1,19 +1,17 @@
 package com.personal.mybatisdemo;
 
-import java.util.Date;
-
 public class UserInfo {
     private String unid;
     private String userName;
     private String mobilephone;
     private String gender;
-    private Date birthday;
+    private String birthday;
     private String profession;
 
     public UserInfo() {
     }
 
-    public UserInfo(String unid, String userName, String mobilephone, String gender, Date birthday, String profession) {
+    public UserInfo(String unid, String userName, String mobilephone, String gender, String birthday, String profession) {
         this.unid = unid;
         this.userName = userName;
         this.mobilephone = mobilephone;
@@ -54,11 +52,11 @@ public class UserInfo {
         this.gender = gender;
     }
 
-    public Date getBirthday() {
+    public String getBirthday() {
         return birthday;
     }
 
-    public void setBirthday(Date birthday) {
+    public void setBirthday(String birthday) {
         this.birthday = birthday;
     }
 
