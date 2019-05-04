@@ -3,11 +3,22 @@ package com.personal.mybatisdemo;
 public class User {
     private String userName;
     private String Password;
+    private String unid;
 
     public User(){}
-    public User(String userName,String Password){
+
+    public User(String userName, String password, String unid) {
         this.userName = userName;
-        this.Password = Password;
+        Password = password;
+        this.unid = unid;
+    }
+
+    public String getUnid() {
+        return unid;
+    }
+
+    public void setUnid(String unid) {
+        this.unid = unid;
     }
 
     public String getUserName() {

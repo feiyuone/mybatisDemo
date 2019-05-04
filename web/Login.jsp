@@ -35,8 +35,8 @@
                 <td><input type="password" class="form-control" name="Password"></td>
             </tr>
             <tr>
-                <td><input class="btn-default" type="submit" value="登录"></td>
-                <td><input class="btn-warning" type="button" value="注册" onclick="openRegPage()"></td>
+                <td><input class="btn btn-default" type="submit" value="登录"></td>
+                <td><input class="btn btn-warning" type="button" value="注册" onclick="openRegPage()"></td>
             </tr>
         </table>
     </div>

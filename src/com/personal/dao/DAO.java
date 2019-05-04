@@ -3,9 +3,7 @@ package com.personal.dao;
 import com.personal.mybatisdemo.User;
 import com.personal.mybatisdemo.UserInfo;
 
-import java.net.URLEncoder;
 import java.sql.Connection;
-import java.sql.Date;
 import java.sql.PreparedStatement;
 import java.sql.ResultSet;
 
@@ -23,6 +21,7 @@ public class DAO {
                 checkUser = new User();
                 checkUser.setUserName(rs.getString("userName"));
                 checkUser.setPassword(rs.getString("Password"));
+                checkUser.setUnid(rs.getString("unid"));
             }
         } catch (Exception e) {
             e.printStackTrace();
@@ -32,11 +31,12 @@ public class DAO {
 
     public boolean RegUser(Connection connection, User user) throws Exception {
         boolean RegSucess = false;
-        String sql = "INSERT into t_user(userName,Password) values(?,?)";
+        String sql = "INSERT into t_user(userName,Password,unid) values(?,?,?)";
         try {
             PreparedStatement pstate = connection.prepareStatement(sql);
             pstate.setString(1, user.getUserName());
             pstate.setString(2, user.getPassword());
+            pstate.setString(3, user.getUnid());
             if (pstate.executeUpdate() > 0) {
                 RegSucess = true;
                 System.out.println("注册成功！");
