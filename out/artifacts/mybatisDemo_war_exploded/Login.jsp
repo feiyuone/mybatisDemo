@@ -22,7 +22,7 @@
 </head>
 <body>
 
-<form action="LoginServlet" method="post">
+<form action="LoginServlet" method="get">
     <div class="form-group">
         <h3>登陆界面</h3>
         <table border="0">
@@ -35,8 +35,8 @@
                 <td><input type="password" class="form-control" name="Password"></td>
             </tr>
             <tr>
-                <td><input class="btn-default" type="submit" value="登录"></td>
-                <td><input class="btn-warning" type="button" value="注册" onclick="openRegPage()"></td>
+                <td><input class="btn btn-default" type="submit" value="登录"></td>
+                <td><input class="btn btn-warning" type="button" value="注册" onclick="openRegPage()"></td>
             </tr>
         </table>
     </div>

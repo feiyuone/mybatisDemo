@@ -5,7 +5,7 @@
   Time: 21:19
   To change this template use File | Settings | File Templates.
 --%>
-<%@ page contentType="text/html;charset=UTF-8" language="java" %>
+<%@ page contentType="text/html;charset=UTF-8" language="java" import="java.util.*,com.personal.mybatisdemo.User" %>
 <html>
 <head>
     <title>首页</title>
@@ -18,8 +18,22 @@
             padding-top: 70px;
         }
     </style>
+    <script type="text/javascript">
+        function showunid() {
+            var unid = document.getElementById("unid").value;
+            alert(unid);
+        }
+    </script>
 </head>
 <body>
+<%
+    ArrayList userList = (ArrayList) request.getAttribute("userlist");
+    User user = (User) userList.get(0);
+%>
+<div style="display: none">
+    <%=userList.size()%>
+    <input type="password" id="unid" value="<%=user.getUnid() %>">
+</div>
 <nav class="navbar navbar-default navbar-fixed-top">
     <div class="container">
         <ul class="nav nav-pills">
@@ -30,6 +44,6 @@
     </div>
 </nav>
 <p>欢迎您，这里是首页！</p>
-
+<input type="button" value="Click here" id="test" onclick="showunid()">
 </body>
 </html>
