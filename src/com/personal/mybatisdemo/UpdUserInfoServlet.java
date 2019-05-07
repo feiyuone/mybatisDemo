@@ -18,7 +18,8 @@ import java.util.Calendar;
 public class UpdUserInfoServlet extends HttpServlet {
     @Override
     protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
-        super.doGet(req, resp);
+        //super.doGet(req, resp);
+        doPost(req, resp);
     }
 
     @Override
@@ -44,9 +45,8 @@ public class UpdUserInfoServlet extends HttpServlet {
             resultJson = dao.UpdUserInfo(conn, userInfo);
             System.out.println(resultJson);
             PrintWriter pWriter = resp.getWriter();
-            resp.setContentType("application/json;charset=UTF-8");
+            resp.setContentType("text/json;charset=UTF-8");
             pWriter.write(resultJson);
-
 
         } catch (Exception e) {
             e.printStackTrace();

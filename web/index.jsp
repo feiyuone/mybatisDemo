@@ -38,7 +38,7 @@
     <div class="container">
         <ul class="nav nav-pills">
             <li role="presentation" class="active"><a href="#">Home</a></li>
-            <li role="presentation"><a href="#">Personal</a></li>
+            <li role="presentation"><a href="html/personInfo.jsp">Personal</a></li>
             <li role="presentation"><a href="#">Settings</a></li>
         </ul>
     </div>
