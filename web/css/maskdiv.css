@@ -1,0 +1,76 @@
+body {
+    background-color: whitesmoke;
+}
+
+table {
+    width: 70%;
+    height: auto;
+    margin-top: 150px;
+    border: 1px solid #4df9fe;
+    text-align: center;
+}
+
+table td {
+    border: 1px solid cyan;
+    width: 150px;
+    height: 40px;
+}
+
+.btnClose {
+    width: 50px;
+    height: 30px;
+    background-color: #38dbfe;
+    color: white;
+    /*z-index: 300;*/
+    position: relative;
+}
+
+.maskDiv {
+    background: url(../img/保密.jpg) center top;
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    filter: "progid:DXImageTransform.Microsoft.AlphaImageLoader(sizingMethod='scale')";
+    position: absolute;
+}
+
+.maskDivShow {
+    width: 800px;
+    height: 500px;
+    z-index: 180;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    overflow: hidden;
+    margin-top: -200px;
+    margin-left: -400px;
+    border-radius: 10px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.5);
+    padding: 50px;
+    box-sizing: border-box;
+    /*filter: progid:DXImageTransform.Microsoft.Blur(PixelRadius=10, MakeShadow=false);*/
+
+}
+
+.maskDivShow::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: -1;
+    /*-1 可以当背景*/
+    -webkit-filter: blur(30px);
+    filter: blur(30px);
+    margin: -30px; /*消除边缘透明*/
+    background: url("../img/保密.jpg") fixed center top;
+    background-size: cover;
+    /*平铺*/
+    filter: "progid:DXImageTransform.Microsoft.AlphaImageLoader(src='../img/保密.jpg', sizingMethod='scale')";
+}
+
+.maskDivShow div{
+    color: crimson;
+    line-height: 1.7;
+}
