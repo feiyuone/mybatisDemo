@@ -3,7 +3,7 @@ package com.personal.util;
 import java.sql.Connection;
 import java.sql.DriverManager;
 public class DBUtil {
-    private String dbUrl = "jdbc:mysql://192.168.1.8:3306/mybatisdemo?useUnicode=true&characterEncoding=utf-8";
+    private String dbUrl = "jdbc:mysql://192.168.1.11:3306/mybatisdemo?useUnicode=true&characterEncoding=utf-8";
     private String dbUserName = "root";
     private String dbPassword = "986692";
     String driver = "com.mysql.cj.jdbc.Driver";
