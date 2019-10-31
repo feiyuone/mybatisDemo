@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Mask Demo</title>
+    <link rel="stylesheet" href="css/maskdiv.css">
+</head>
+<body>
+
+<div class="maskDiv" id="maskDiv">
+    <div class="maskDivShow">
+        <div class="divContent" id="divContent">
+            本协议所称保密信息为甲乙双方在洽谈、协商或合作中，乙方知晓甲方的以下信息： <br/>
+            1、技术信息：技术方案、工程设计、技术报告、检测报告、实验数据、试验结果、图纸、样品等。 <br/>
+            2、经营信息：包括经营方针、投资决策意向、产品服务定价、市场分析、广告策略等。 <br/>
+            3、财务信息：包括营业收入、利润、净资产等数据。 <br/>
+            4、甲方与乙方所洽谈、协商或合作事宜本身及相关内容。 <br/>
+            5、甲方依照法律规定或者有关协议的约定对外承担保密义务的事项。 <br/>
+            6、甲方尚未对外公开披露的信息。<br/>
+            <button class="btnClose" onclick="closeMask()">Close</button>
+        </div>
+    </div>
+
+</div>
+<script type="text/javascript">
+    /*
+    * 当脚本为js代码时，并且是在低版本的ie上运行时，
+    * type必须是text/javascript,
+    * 不能是application/javascript，
+    * 不然在ie上会function未定义的错误
+    * */
+
+    function closeMask() {
+        var maskDiv = document.getElementById("maskDiv");
+        var divContent = document.getElementById("divContent");
+        //maskDiv.className = "maskDiv";                //更改元素class属性，所有浏览器通用
+        //maskDiv.setAttribute("class", "maskDiv");
+        //maskDiv.style.display="none";
+        divContent.innerHTML = "<b><span style='font-size: 16pt;color: lawngreen'>您同意了保密协议，请保密你看过的内容</span></b>";
+    }
+</script>
+</body>
+
+</html>
