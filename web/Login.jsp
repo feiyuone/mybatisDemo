@@ -14,6 +14,7 @@
     <link rel="stylesheet" href="css/bootstrap-theme.min.css">
     <script type="text/javascript" src="js/jquery-3.3.1.min.js"></script>
     <script type="text/javascript" src="js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="css/maskdiv.css">
     <script type="text/javascript">
         function openRegPage() {
             location.href = "RegUser.jsp";
@@ -22,8 +23,8 @@
 </head>
 <body>
 
-<form action="LoginServlet" method="get">
-    <div class="form-group">
+<form action="LoginServlet" method="get" class="maskDiv">
+    <div class="maskDivShow form-group">
         <h3>登陆界面</h3>
         <table border="0">
             <tr>
@@ -35,8 +36,12 @@
                 <td><input type="password" class="form-control" name="Password"></td>
             </tr>
             <tr>
-                <td><input class="btn btn-default" type="submit" value="登录"></td>
-                <td><input class="btn btn-warning" type="button" value="注册" onclick="openRegPage()"></td>
+                <td colspan="2">
+                    <div>
+                        <input class="btn btn-default" type="submit" value="登录">
+                        <input class="btn btn-warning" type="button" value="注册" onclick="openRegPage()">
+                    </div>
+                </td>
             </tr>
         </table>
     </div>
