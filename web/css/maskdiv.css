@@ -21,8 +21,8 @@ body {
 }
 
 .maskDivShow {
-    width: 300px;
-    height: 250px;
+    width: 350px;
+    height: 280px;
     z-index: 180;
     position: absolute;
     top: 50%;
@@ -35,7 +35,7 @@ body {
     padding: 50px;
     box-sizing: border-box;
     /*filter: progid:DXImageTransform.Microsoft.Blur(PixelRadius=10, MakeShadow=false);*/
-
+    color: deepskyblue;
 }
 
 .maskDivShow::before {
@@ -56,7 +56,18 @@ body {
     filter: "progid:DXImageTransform.Microsoft.AlphaImageLoader(src='../image/保密.jpg', sizingMethod='scale')";
 }
 
-.maskDivShow div {
+.maskDivShow div{
     color: crimson;
     line-height: 1.7;
+    margin-top: 15px;
+    text-align: center;
+}
+
+.maskDivShow td {
+    height: 40px;
+}
+
+.maskDivShow div input {
+    margin-right: 10px;
+    margin-left: 5px;
 }
