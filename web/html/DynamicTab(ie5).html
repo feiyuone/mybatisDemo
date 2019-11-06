@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" type="text/css" href="../css/DynamicTab.css"/>
+    <script type="text/javascript" src="../js/DynamicTable(ie5).js"></script>
+    <script type="text/javascript" src="../js/dojo-1.15/dojo/dojo.js"></script>
+</head>
+
+<body>
+<div style="display:none">
+    <div id="dataStore">
+        []
+    </div>
+</div>
+
+<div width="100%" align="center">
+    <table class="tableClass" style="width: 90%;" align="center">
+        <tr>
+            <td align="right" width="100%">
+                <a class="button" onclick="SaveDataTable()"><span>保存</span></a>
+                <a class="button"
+                   onclick="DelRow(this.parentNode.parentNode.parentNode.parentNode.parentNode.getElementsByTagName('table')[1])"><span>删除</span></a>
+                <a class="button"
+                   onclick="AddRow(this.parentNode.parentNode.parentNode.parentNode.parentNode.getElementsByTagName('table')[1])"><span>新增</span></a>
+            <td>
+        </tr>
+    </table>
+
+    <table id="example" width="90%" align="center" class="table" name="example">
+        <tr>
+            <th>选择</th>
+            <th>序号</th>
+            <th>Label 1</th>
+            <th>Label 2</th>
+            <th>Label 3</th>
+        </tr>
+        <tr>
+            <td><input type="checkbox" name="selectBox" class="checkbox" style="height:15px" id="selectBox"/></td>
+            <td></td>
+            <td><span class="needFill">*</span><input type="text" name="field1" class="input" size="30"/></td>
+            <td><input type="text" name="field2" class="input" size="30"/></td>
+            <td><input type="text" name="field3" class="input" size="30"/></td>
+        </tr>
+    </table>
+    <script type="text/template" id="template" name="template">
+        <td><input type="checkbox" name="selectBox" class="checkbox" style="height:15px" id="selectBox"/></td>
+        <td></td>
+        <td><span class="needFill">*</span><input type="text" name="field1" class="input" size="30"/></td>
+        <td><input type="text" name="field2" class="input" size="30"/></td>
+        <td><input type="text" name="field3" class="input" size="30"/></td>
+    </script>
+</div>
+
+<div width="100%" align="center">
+    <table class="tableClass" style="width: 90%;" align="center">
+        <tr>
+            <td align="right" width="100%">
+                <a class="button" onclick="SaveDataTable()"><span>保存</span></a>
+                <a class="button"
+                   onclick="DelRow(this.parentNode.parentNode.parentNode.parentNode.parentNode.getElementsByTagName('table')[1])"><span>删除</span></a>
+                <a class="button"
+                   onclick="AddRow(this.parentNode.parentNode.parentNode.parentNode.parentNode.getElementsByTagName('table')[1])"><span>新增</span></a>
+            <td>
+        </tr>
+    </table>
+
+    <table id="example" width="90%" align="center" class="table" name="example">
+        <tr>
+            <th>选择</th>
+            <th>序号</th>
+            <th>Label 1</th>
+            <th>Label 2</th>
+            <th>Label 3</th>
+        </tr>
+    </table>
+    <script type="text/template" id="template" name="template">
+        <td><input type="checkbox" name="selectBox" class="checkbox" style="height:15px" id="selectBox"/></td>
+        <td></td>
+        <td><span class="needFill">*</span><input type="text" name="field1" class="input" size="30"/></td>
+        <td><input type="text" name="field2" class="input" size="30"/></td>
+        <td><input type="text" name="field3" class="input" size="30"/></td>
+    </script>
+</div>
+<script type="text/javascript">
+    dojo.addOnLoad(loadDymTabData);
+</script>
+</body>
+
+</html>

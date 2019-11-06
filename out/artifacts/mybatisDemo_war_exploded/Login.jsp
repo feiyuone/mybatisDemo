@@ -24,28 +24,27 @@
 <body>
 
 <form action="LoginServlet" method="get" class="maskDiv">
-    <div class="page-header"> 顶部</div>
-    <div class="left">左边</div>
-    <div class="right maskDivShow">
-        <div class="divContent form-group">
-            <h3>登陆界面</h3>
-            <table border="0">
-                <tr>
-                    <td>用户名：</td>
-                    <td><input type="text" class="form-control" name="userName"></td>
-                </tr>
-                <tr>
-                    <td>密码：</td>
-                    <td><input type="password" class="form-control" name="Password"></td>
-                </tr>
-                <tr>
-                    <td><input class="btn btn-default" type="submit" value="登录"></td>
-                    <td><input class="btn btn-warning" type="button" value="注册" onclick="openRegPage()"></td>
-                </tr>
-            </table>
-        </div>
+    <div class="maskDivShow form-group">
+        <h3>登陆界面</h3>
+        <table border="0">
+            <tr>
+                <td>用户名：</td>
+                <td><input type="text" class="form-control" name="userName"></td>
+            </tr>
+            <tr>
+                <td>密码：</td>
+                <td><input type="password" class="form-control" name="Password"></td>
+            </tr>
+            <tr>
+                <td colspan="2">
+                    <div>
+                        <input class="btn btn-default" type="submit" value="登录">
+                        <input class="btn btn-warning" type="button" value="注册" onclick="openRegPage()">
+                    </div>
+                </td>
+            </tr>
+        </table>
     </div>
-
 </form>
 
 </body>

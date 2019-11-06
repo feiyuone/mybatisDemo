@@ -1,0 +1,118 @@
+
+body {
+    background-color: ghostwhite;
+}
+
+a.button {
+    background: transparent url('../image/bg_button_a.gif') no-repeat scroll top right;
+    color: #444;
+    display: block;
+    float: right;
+    font: normal 12px arial, sans-serif;
+    height: 24px;
+    margin-right: 6px;
+    padding-right: 18px;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+a.button span {
+    background: transparent url('../image/bg_button_span.gif') no-repeat;
+    display: block;
+    line-height: 14px;
+    padding: 5px 0 5px 18px;
+    cursor: pointer;
+}
+
+
+.table {
+    width: 90%;
+    border: 1px solid lightgray;
+    text-align: center;
+    border-collapse: collapse;
+    vertical-align: middle;
+}
+
+.table tr {
+    text-align: center;
+}
+
+.table th {
+    /* color: lightskyblue; */
+    font-family: sans-serif;
+    font-size: 16px;
+    height: 30px;
+}
+
+.table td {
+    border: 1px solid lightgray;
+    height: 40px;
+    text-align: center;
+    vertical-align: middle;
+}
+
+.input {
+    vertical-align: middle;
+    border: 1px solid #a6e1ec;
+    word-break: break-all;
+    height: 30px;
+    padding: 0px;
+    background-color: floralwhite;
+    word-wrap: break-word;
+    border-radius: 5px;
+}
+
+
+.input1 {
+    background-color: floralwhite;
+    border: 1pt solid aqua;
+    border-radius: 5px;
+    height: 30px;
+    width: 150px;
+    text-indent: 6px;
+    vertical-align: middle;
+}
+
+
+.inputNeedFill {
+    background-color: floralwhite;
+    border: 1pt solid orangered;
+    border-radius: 5px;
+    height: 30px;
+    padding: 0px;
+    /* width: 150px; */
+    text-indent: 6px;
+}
+
+
+.checkbox {
+    width: 15px;
+    height: 15px;
+    cursor: pointer;
+    /* background-color: rgb(104, 74, 241); */
+    border: 1pt solid;
+    border-radius: 50%;
+}
+
+.checkbox:checked {
+    text-align: center;
+    font-size: 16px;
+    background-color: lightskyblue;
+}
+
+.oprationBtn {
+    text-align: center;
+    border-radius: 5px;
+    background-color: rgb(51, 131, 236);
+    width: 50px;
+    height: 35px;
+    color: white;
+}
+
+.needFill {
+    color: red;
+    margin-right: 6px;
+    font-size: 14px;
+    text-align: center;
+    vertical-align: middle;
+}
