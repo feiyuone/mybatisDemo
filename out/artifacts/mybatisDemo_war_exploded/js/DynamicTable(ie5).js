@@ -9,7 +9,7 @@ function analysisTemplate(tpl) {
             TDArr[i] = TDArr[i].replace("        ", "");
         }
     }
-    TDArr.splice(-1, 1);
+    TDArr.splice(-1,1);
     return TDArr;
 }
 
