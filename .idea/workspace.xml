@@ -6,33 +6,11 @@
     </artifacts-to-build>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="d03b1999-4cef-4506-9952-043e7ec88f85" name="Default Changelist" comment="更新了动态表格的相关语法格式">
-      <change afterPath="$PROJECT_DIR$/out/artifacts/mybatisDemo_war_exploded/WEB-INF/classes/com/personal/mybatisdemo/UpdUserInfoServlet.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/artifacts/mybatisDemo_war_exploded/WEB-INF/classes/com/personal/mybatisdemo/UserInfo.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/artifacts/mybatisDemo_war_exploded/css/DynamicTab.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/artifacts/mybatisDemo_war_exploded/css/bootstrap-theme.min.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/artifacts/mybatisDemo_war_exploded/css/bootstrap.min.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/artifacts/mybatisDemo_war_exploded/css/maskdiv.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/artifacts/mybatisDemo_war_exploded/html/DynamicTab(ie5).html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/artifacts/mybatisDemo_war_exploded/html/personInfo.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/artifacts/mybatisDemo_war_exploded/html/setting.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/artifacts/mybatisDemo_war_exploded/image/123.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/artifacts/mybatisDemo_war_exploded/image/bg_button_a.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/artifacts/mybatisDemo_war_exploded/image/bg_button_span.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/artifacts/mybatisDemo_war_exploded/image/glass.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/artifacts/mybatisDemo_war_exploded/image/timg.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/artifacts/mybatisDemo_war_exploded/image/保密.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/artifacts/mybatisDemo_war_exploded/js/DynamicTable(ie5).js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/artifacts/mybatisDemo_war_exploded/js/bootstrap.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/artifacts/mybatisDemo_war_exploded/js/jquery-3.3.1.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/artifacts/mybatisDemo_war_exploded/mask-div.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/mybatisDemo/com/personal/mybatisdemo/UpdUserInfoServlet.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/mybatisDemo/com/personal/mybatisdemo/UserInfo.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+    <list default="true" id="d03b1999-4cef-4506-9952-043e7ec88f85" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/web/js/autoValidate.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/css/DynamicTab.css" beforeDir="false" afterPath="$PROJECT_DIR$/web/css/DynamicTab.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/html/DynamicTab(ie5).html" beforeDir="false" afterPath="$PROJECT_DIR$/web/html/DynamicTab(ie5).html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/js/DynamicTable(ie5).js" beforeDir="false" afterPath="$PROJECT_DIR$/web/js/DynamicTable(ie5).js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/mybatisDemo_war_exploded/html/DynamicTab(ie5).html" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/mybatisDemo_war_exploded/html/DynamicTab(ie5).html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/mybatisDemo_war_exploded/js/DynamicTable(ie5).js" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/mybatisDemo_war_exploded/js/DynamicTable(ie5).js" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -91,13 +69,14 @@
     <property name="settings.editor.selected.configurable" value="settings.github" />
   </component>
   <component name="RecentsManager">
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="E:\ideaproject\Javaproject\mybatisDemo\web" />
-      <recent name="E:\ideaproject\Javaproject\mybatisDemo\web\WEB-INF\lib" />
-    </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="E:\ideaproject\Javaproject\mybatisDemo\web\WEB-INF\js" />
       <recent name="E:\ideaproject\Javaproject\mybatisDemo\web\WEB-INF\css" />
+      <recent name="E:\ideaproject\Javaproject\mybatisDemo\web\WEB-INF\lib" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\开发资料\ideaprojects\mybatisDemo\web\js" />
+      <recent name="E:\ideaproject\Javaproject\mybatisDemo\web" />
       <recent name="E:\ideaproject\Javaproject\mybatisDemo\web\WEB-INF\lib" />
     </key>
   </component>
@@ -314,6 +293,10 @@
       <workItem from="1572828389173" duration="36000" />
       <workItem from="1572828448888" duration="8174000" />
       <workItem from="1573086000567" duration="330000" />
+      <workItem from="1573627658677" duration="332000" />
+      <workItem from="1574061319088" duration="175000" />
+      <workItem from="1574136981611" duration="769000" />
+      <workItem from="1574409456314" duration="274000" />
     </task>
     <task id="LOCAL-00001" summary="initialize">
       <created>1555683552884</created>
@@ -420,7 +403,14 @@
       <option name="project" value="LOCAL" />
       <updated>1572605284119</updated>
     </task>
-    <option name="localTasksCounter" value="16" />
+    <task id="LOCAL-00016" summary="更新了动态表格的相关语法格式">
+      <created>1573096174406</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1573096174406</updated>
+    </task>
+    <option name="localTasksCounter" value="17" />
     <servers />
   </component>
   <component name="TodoView">
@@ -475,7 +465,8 @@
     <MESSAGE value="1.修改了登陆时调用的servlet，使其返回封装了User对象的List对象&#10;2.修改登陆页面提交方法为get，原为post，解决405错误&#10;3.首页增加unid的隐藏字段，方便下一步用来完善个人信息时使用" />
     <MESSAGE value="1.修改个人信息表的提交方式为ajax" />
     <MESSAGE value="更新了登录页面和相关的css资源文件" />
-    <option name="LAST_COMMIT_MESSAGE" value="更新了登录页面和相关的css资源文件" />
+    <MESSAGE value="更新了动态表格的相关语法格式" />
+    <option name="LAST_COMMIT_MESSAGE" value="更新了动态表格的相关语法格式" />
     <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
   </component>
 </project>
