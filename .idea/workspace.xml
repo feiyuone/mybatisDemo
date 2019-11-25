@@ -7,10 +7,14 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="d03b1999-4cef-4506-9952-043e7ec88f85" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/web/js/autoValidate.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/personal/mybatisdemo/GetUserInfoServlet.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/html/personInfodisp.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/mybatisDemo_war_exploded/html/DynamicTab(ie5).html" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/mybatisDemo_war_exploded/html/DynamicTab(ie5).html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/mybatisDemo_war_exploded/js/DynamicTable(ie5).js" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/mybatisDemo_war_exploded/js/DynamicTable(ie5).js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mybatisDemo.iml" beforeDir="false" afterPath="$PROJECT_DIR$/mybatisDemo.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/mybatisDemo_war_exploded/WEB-INF/classes/META-INF/mybatisDemo.kotlin_module" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/mybatisDemo_war_exploded/WEB-INF/classes/META-INF/mybatisDemo.kotlin_module" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/personal/dao/DAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/personal/dao/DAO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/index.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/web/index.jsp" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -24,9 +28,9 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
+        <option value="HTML File" />
         <option value="Jsp File" />
         <option value="Class" />
-        <option value="HTML File" />
       </list>
     </option>
   </component>
@@ -63,20 +67,23 @@
     <property name="node.js.selected.package.tslint" value="(autodetect)" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
-    <property name="project.structure.last.edited" value="Project" />
+    <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
     <property name="settings.editor.selected.configurable" value="settings.github" />
   </component>
   <component name="RecentsManager">
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="E:\ideaproject\Javaproject\mybatisDemo\web\WEB-INF\js" />
-      <recent name="E:\ideaproject\Javaproject\mybatisDemo\web\WEB-INF\css" />
-      <recent name="E:\ideaproject\Javaproject\mybatisDemo\web\WEB-INF\lib" />
-    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="D:\开发资料\ideaprojects\mybatisDemo\web\js" />
       <recent name="E:\ideaproject\Javaproject\mybatisDemo\web" />
+      <recent name="E:\ideaproject\Javaproject\mybatisDemo\web\WEB-INF\lib" />
+    </key>
+    <key name="CreateClassDialog.RecentsKey">
+      <recent name="com.personal.dao" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="E:\ideaproject\Javaproject\mybatisDemo\web\WEB-INF\js" />
+      <recent name="E:\ideaproject\Javaproject\mybatisDemo\web\WEB-INF\css" />
       <recent name="E:\ideaproject\Javaproject\mybatisDemo\web\WEB-INF\lib" />
     </key>
   </component>
@@ -106,7 +113,7 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Tomcat 9.0.19" type="#com.intellij.j2ee.web.tomcat.TomcatRunConfigurationFactory" factoryName="Local" APPLICATION_SERVER_NAME="Tomcat 9.0.12" ALTERNATIVE_JRE_ENABLED="false" nameIsGenerated="true">
+    <configuration name="Tomcat 9.0.19" type="#com.intellij.j2ee.web.tomcat.TomcatRunConfigurationFactory" factoryName="Local" APPLICATION_SERVER_NAME="Tomcat 9.0.19" ALTERNATIVE_JRE_ENABLED="false" nameIsGenerated="true">
       <option name="BROWSER_ID" value="a7bb68e0-33c0-4d6f-a81a-aac1fdb870c8" />
       <option name="UPDATING_POLICY" value="restart-server" />
       <deployment>
@@ -297,6 +304,7 @@
       <workItem from="1574061319088" duration="175000" />
       <workItem from="1574136981611" duration="769000" />
       <workItem from="1574409456314" duration="274000" />
+      <workItem from="1574688340601" duration="5517000" />
     </task>
     <task id="LOCAL-00001" summary="initialize">
       <created>1555683552884</created>

@@ -8,7 +8,6 @@ import java.sql.PreparedStatement;
 import java.sql.ResultSet;
 
 public class DAO {
-
     public User Login(Connection connection, User user) throws Exception {
         User checkUser = null;
         String sql = "Select * from t_user where userName = ? and Password = ?";
@@ -85,5 +84,26 @@ public class DAO {
         }
 
         return rtnJsonStr;
+    }
+
+    public UserInfo getUserInfo(Connection connection, String UserName) {
+        UserInfo userInfo = new UserInfo();
+        String querySql = "Select * from t_userinfo where unid=?";
+        try {
+            PreparedStatement preparedStatement = connection.prepareStatement(querySql);
+            preparedStatement.setString(1, UserName);
+            ResultSet rs = preparedStatement.executeQuery();
+            if (rs.next()) {
+                userInfo.setUserName(rs.getString("username"));
+                userInfo.setMobilephone(rs.getString("mobilephone"));
+                userInfo.setGender(rs.getString("gender"));
+                userInfo.setProfession(rs.getString("profession"));
+            } else {
+                System.out.println("错误，用户尚未完善个人信息");
+            }
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
+        return userInfo;
     }
 }
