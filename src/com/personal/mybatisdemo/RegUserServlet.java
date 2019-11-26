@@ -29,13 +29,13 @@ public class RegUserServlet extends HttpServlet {
         String userName = req.getParameter("userName");
         System.out.println("注册用户："+userName);
         String Password = req.getParameter("Password");
-        unid = cal.getTimeInMillis() + URLEncoder.encode(userName, "UTF-8");
         DBUtil dbUtil = new DBUtil();
-        User user = new User(userName, Password, unid);
         DAO dao = new DAO();
         boolean regSucess = false;
         try{
             Connection conn = dbUtil.getConn();
+            unid = cal.getTimeInMillis() + dao.getTableRowCount(conn, "t_userinfo");
+            User user = new User(userName, Password, unid);
             regSucess = dao.RegUser(conn,user);
             if (regSucess)
                 resp.sendRedirect("Login.jsp");

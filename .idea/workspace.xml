@@ -7,14 +7,28 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="d03b1999-4cef-4506-9952-043e7ec88f85" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/com/personal/mybatisdemo/GetUserInfoServlet.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/html/personInfodisp.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/artifacts/mybatisDemo_war_exploded.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/artifacts/mybatisDemo_war_exploded.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/mysql_connector_java_8_0_15.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/mysql_connector_java_8_0_15.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/mybatisDemo.iml" beforeDir="false" afterPath="$PROJECT_DIR$/mybatisDemo.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/mybatisDemo_war_exploded/WEB-INF/classes/META-INF/mybatisDemo.kotlin_module" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/mybatisDemo_war_exploded/WEB-INF/classes/META-INF/mybatisDemo.kotlin_module" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/mybatisDemo_war_exploded/WEB-INF/classes/com/personal/dao/DAO.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/mybatisDemo_war_exploded/WEB-INF/classes/com/personal/dao/DAO.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/mybatisDemo_war_exploded/WEB-INF/classes/com/personal/mybatisdemo/LoginServlet.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/mybatisDemo_war_exploded/WEB-INF/classes/com/personal/mybatisdemo/LoginServlet.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/mybatisDemo_war_exploded/WEB-INF/classes/com/personal/mybatisdemo/RegUserServlet.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/mybatisDemo_war_exploded/WEB-INF/classes/com/personal/mybatisdemo/RegUserServlet.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/mybatisDemo_war_exploded/WEB-INF/classes/com/personal/mybatisdemo/UpdUserInfoServlet.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/mybatisDemo_war_exploded/WEB-INF/classes/com/personal/mybatisdemo/UpdUserInfoServlet.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/mybatisDemo_war_exploded/WEB-INF/classes/com/personal/util/DBUtil.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/mybatisDemo_war_exploded/WEB-INF/classes/com/personal/util/DBUtil.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/mybatisDemo_war_exploded/index.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/mybatisDemo_war_exploded/index.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/mybatisDemo/com/personal/dao/DAO.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/mybatisDemo/com/personal/dao/DAO.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/mybatisDemo/com/personal/mybatisdemo/LoginServlet.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/mybatisDemo/com/personal/mybatisdemo/LoginServlet.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/mybatisDemo/com/personal/mybatisdemo/RegUserServlet.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/mybatisDemo/com/personal/mybatisdemo/RegUserServlet.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/mybatisDemo/com/personal/mybatisdemo/UpdUserInfoServlet.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/mybatisDemo/com/personal/mybatisdemo/UpdUserInfoServlet.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/mybatisDemo/com/personal/util/DBUtil.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/mybatisDemo/com/personal/util/DBUtil.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/com/personal/dao/DAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/personal/dao/DAO.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/index.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/web/index.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/personal/mybatisdemo/LoginServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/personal/mybatisdemo/LoginServlet.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/personal/mybatisdemo/RegUserServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/personal/mybatisdemo/RegUserServlet.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/personal/mybatisdemo/UpdUserInfoServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/personal/mybatisdemo/UpdUserInfoServlet.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/personal/util/DBUtil.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/personal/util/DBUtil.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/html/personInfodisp.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/web/html/personInfodisp.jsp" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -58,7 +72,7 @@
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/web/WEB-INF/js" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/com" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
@@ -70,20 +84,20 @@
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
-    <property name="settings.editor.selected.configurable" value="settings.github" />
+    <property name="settings.editor.selected.configurable" value="configurable.group.build.tools" />
   </component>
   <component name="RecentsManager">
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="D:\开发资料\ideaprojects\mybatisDemo\web\js" />
-      <recent name="E:\ideaproject\Javaproject\mybatisDemo\web" />
-      <recent name="E:\ideaproject\Javaproject\mybatisDemo\web\WEB-INF\lib" />
-    </key>
     <key name="CreateClassDialog.RecentsKey">
       <recent name="com.personal.dao" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="E:\ideaproject\Javaproject\mybatisDemo\web\WEB-INF\js" />
       <recent name="E:\ideaproject\Javaproject\mybatisDemo\web\WEB-INF\css" />
+      <recent name="E:\ideaproject\Javaproject\mybatisDemo\web\WEB-INF\lib" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\开发资料\ideaprojects\mybatisDemo\web\js" />
+      <recent name="E:\ideaproject\Javaproject\mybatisDemo\web" />
       <recent name="E:\ideaproject\Javaproject\mybatisDemo\web\WEB-INF\lib" />
     </key>
   </component>
@@ -99,7 +113,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Tomcat Server.Tomcat 9.0.19">
+  <component name="RunManager" selected="Tomcat Server.Tomcat 9.0.12">
     <configuration name="DBUtil" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.personal.util.DBUtil" />
       <module name="mybatisDemo" />
@@ -113,7 +127,7 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Tomcat 9.0.19" type="#com.intellij.j2ee.web.tomcat.TomcatRunConfigurationFactory" factoryName="Local" APPLICATION_SERVER_NAME="Tomcat 9.0.19" ALTERNATIVE_JRE_ENABLED="false" nameIsGenerated="true">
+    <configuration name="Tomcat 9.0.12" type="#com.intellij.j2ee.web.tomcat.TomcatRunConfigurationFactory" factoryName="Local" APPLICATION_SERVER_NAME="Tomcat 9.0.12" ALTERNATIVE_JRE_ENABLED="false" nameIsGenerated="true">
       <option name="BROWSER_ID" value="a7bb68e0-33c0-4d6f-a81a-aac1fdb870c8" />
       <option name="UPDATING_POLICY" value="restart-server" />
       <deployment>
@@ -252,7 +266,7 @@
     </configuration>
     <list>
       <item itemvalue="Application.DBUtil" />
-      <item itemvalue="Tomcat Server.Tomcat 9.0.19" />
+      <item itemvalue="Tomcat Server.Tomcat 9.0.12" />
     </list>
     <recent_temporary>
       <list>

@@ -13,6 +13,7 @@ import java.io.PrintWriter;
 import java.net.URLEncoder;
 import java.sql.Connection;
 import java.util.Calendar;
+import java.util.List;
 
 @WebServlet(value = "/UpdUserInfoServlet")
 public class UpdUserInfoServlet extends HttpServlet {
@@ -32,11 +33,13 @@ public class UpdUserInfoServlet extends HttpServlet {
         String gender = req.getParameter("gender");
         String profession = req.getParameter("profession");
         Calendar cal = Calendar.getInstance();
-        String unid = String.valueOf(cal.getTimeInMillis()) + URLEncoder.encode(UserName, "utf-8");
+        String unid = "";
         UserInfo userInfo = null;
         Connection conn = null;
         String resultJson = "";
         try {
+            List<User> users = (List<User>) req.getSession().getAttribute("userlist");
+            unid = users.get(0).getUnid();
             String birthday = req.getParameter("birthday");
             userInfo = new UserInfo(unid, UserName, MobilePhone, gender, birthday, profession);
             DAO dao = new DAO();

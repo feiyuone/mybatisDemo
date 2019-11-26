@@ -8,6 +8,7 @@ import javax.servlet.annotation.WebServlet;
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
+import javax.servlet.http.HttpSession;
 import java.io.IOException;
 import java.sql.Connection;
 import java.util.ArrayList;
@@ -29,11 +30,13 @@ public class LoginServlet extends HttpServlet {
         DBUtil dbUtil = new DBUtil();
         DAO dao = new DAO();
         try {
+            HttpSession session = req.getSession();
             Connection conn = dbUtil.getConn();
             checkUser = dao.Login(conn, user);
             if (checkUser != null) {
                 userList.add(checkUser);
                 req.setAttribute("userlist", userList);
+                session.setAttribute("userlist", userList);
                 req.getRequestDispatcher("index.jsp").forward(req, resp);
                 //resp.sendRedirect("index.jsp");
             } else {

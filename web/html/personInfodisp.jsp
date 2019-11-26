@@ -11,6 +11,7 @@
 <%@ page import="com.personal.util.DBUtil" %>
 <%@ page import="java.sql.Connection" %>
 <%@ page import="com.personal.dao.DAO" %>
+<%@ page import="java.util.List" %>
 
 <html>
 <head>
@@ -24,9 +25,9 @@
 <%
     DBUtil dbUtil = new DBUtil();
     Connection conn = dbUtil.getConn();
-    User userObject = (User) request.getAttribute("userlist");
-    Dao dao = new DAO();
-    UserInfo userInfo = dao.getUserInfo(conn, userObject.getUserName());
+    List<User> userObject = (List<User>) request.getSession().getAttribute("userlist");
+    DAO dao = new DAO();
+    UserInfo userInfo = dao.getUserInfo(conn, userObject.get(0).getUnid());
 %>
 
 <div align="center">
@@ -35,29 +36,29 @@
         <table class="table table-striped" style="width:40%;">
             <tr class="form-group">
                 <td>姓名：</td>
-                <td><input class="form-control" type="text" name="username" id="username"
+                <td><input class="form-control" type="text" name="username" id="username" readonly="readonly"
                            value="<%= userInfo.getUserName() %>"></td>
             </tr>
             <tr class="form-group">
                 <td>手机号：</td>
-                <td><input class="form-control" type="text" name="mobilephone" id="mobilephone"
+                <td><input class="form-control" type="text" name="mobilephone" id="mobilephone" readonly="readonly"
                            value="<%=userInfo.getMobilephone()%>"></td>
             </tr>
             <tr class="form-group">
                 <td>性别：</td>
                 <td>
-                    <label class="input-group-addon"><input type="radio" name="gender" value="0" checked>男</label>
-                    <label class="input-group-addon"><input type="radio" name="gender" value="1">女</label>
+                    <input class="form-control" readonly="readonly" type="text" name="gender"
+                           value="<%=userInfo.getGender().equals("1")?"女":"男"%>">
                 </td>
             </tr>
             <tr class="form-group">
                 <td>生日：</td>
-                <td><input class="form-control" type="date" name="birthday" id="birthday"
-                           value="<%=userInfo.getBirthday()%>"></td>
+                <td><input class="form-control" type="text" name="birthday" id="birthday" readonly="readonly"
+                           value="<%=userInfo.getBirthday().substring(0,10)%>"></td>
             </tr>
             <tr class="form-group">
                 <td>职业：</td>
-                <td><input class="form-control" type="text" name="profession" id="profession"
+                <td><input class="form-control" type="text" name="profession" id="profession" readonly="readonly"
                            value="<%=userInfo.getProfession()%>"></td>
             </tr>
 

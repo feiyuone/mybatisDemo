@@ -98,6 +98,7 @@ public class DAO {
                 userInfo.setMobilephone(rs.getString("mobilephone"));
                 userInfo.setGender(rs.getString("gender"));
                 userInfo.setProfession(rs.getString("profession"));
+                userInfo.setBirthday(rs.getString("birthday"));
             } else {
                 System.out.println("错误，用户尚未完善个人信息");
             }
@@ -105,5 +106,25 @@ public class DAO {
             e.printStackTrace();
         }
         return userInfo;
+    }
+
+    public String getTableRowCount(Connection conn, String tableName) {
+        String count = "";
+        String queryStr = "Select count(*) from ?";
+        PreparedStatement preparedStatement = null;
+        try {
+            preparedStatement = conn.prepareStatement(queryStr);
+            preparedStatement.setString(1, tableName);
+            ResultSet rs = preparedStatement.executeQuery();
+            if (rs.next()) {
+                count = rs.getString("count(*)");
+            } else {
+                System.out.println("该表中尚无数据");
+                count = "0";
+            }
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
+        return count;
     }
 }
